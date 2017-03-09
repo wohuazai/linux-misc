@@ -1,23 +1,25 @@
-git ³£ÓÃµÄÃüÁî
+git å¸¸ç”¨çš„å‘½ä»¤
 
 1 echo "# hardwera" >> README.md
-2 git init                       //ÔÚ¸ÃÄ¿Â¼ÏÂ³õÊ¼»¯git
-3 git add README.md              //°ÑÎÄ¼şÌí¼Óµ½±¾µØ¿â
-4 git commit -m "first commit"   //Ìá½»±¾´ÎÌá½»	
-5 git remote add origin https://github.com/wohuazai/hardwera.git    //¹ØÁªÒ»¸öÔ¶³Ì¿â
-6 git push -u origin master      //(µÚÒ»´ÎÒªÓÃ-u ÒÔºó²»ĞèÒª)°Ñµ±Ç°master·ÖÖ§ÍÆËÍµ½Ô¶³Ì¿â
- 
+2 git init                       //åœ¨è¯¥ç›®å½•ä¸‹åˆå§‹åŒ–git
+3 git add README.md              //æŠŠæ–‡ä»¶æ·»åŠ åˆ°æœ¬åœ°åº“
+4 git commit -m "first commit"   //æäº¤æœ¬æ¬¡æäº¤	
+5 git remote add origin https://github.com/wohuazai/hardwera.git    //å…³è”ä¸€ä¸ªè¿œç¨‹åº“
+6 git push -u origin master      //(ç¬¬ä¸€æ¬¡è¦ç”¨-u ä»¥åä¸éœ€è¦)æŠŠå½“å‰masteråˆ†æ”¯æ¨é€åˆ°è¿œç¨‹åº“
 
-git merge ¨C-no-ff  -m ¡°×¢ÊÍ¡± dev £¨ºÏ²¢½ûÓÃ¡±Fast forward£©
+7 git config  --global user.name "ä½ çš„ç›®æ ‡ç”¨æˆ·å"ï¼›
+8 git config  --global user.email "ä½ çš„ç›®æ ‡é‚®ç®±å";
 
-git branch dev ´´½¨·ÖÖ§(-dÉ¾³ı)
-git checkout dev ÇĞ»»·ÖÖ§
-git checkout  ¨Cb dev origin/dev £¨Ô¶³Ì´´½¨dev·ÖÖ§£©
-git reflog    ²é¿´ÀúÊ·°æ±¾ºÅid
-git reset --hard id µ÷µ½Ä³¸ö°æ±¾
-git rebase -i <°æºÅ>  ºÏ²¢comit
+git merge â€“-no-ff  -m â€œæ³¨é‡Šâ€ dev ï¼ˆåˆå¹¶ç¦ç”¨â€Fast forwardï¼‰
+
+git branch dev åˆ›å»ºåˆ†æ”¯(-dåˆ é™¤)
+git checkout dev åˆ‡æ¢åˆ†æ”¯
+git checkout  â€“b dev origin/dev ï¼ˆè¿œç¨‹åˆ›å»ºdevåˆ†æ”¯ï¼‰
+git reflog    æŸ¥çœ‹å†å²ç‰ˆæœ¬å·id
+git reset --hard id è°ƒåˆ°æŸä¸ªç‰ˆæœ¬
+git rebase -i <ç‰ˆå·>  åˆå¹¶comit
 git reset --soft commit-id
-git reset --hard HEAD^~1 £¨ÍË
+git reset --hard HEAD^~1 ï¼ˆé€€
 
 git clone
 git push
